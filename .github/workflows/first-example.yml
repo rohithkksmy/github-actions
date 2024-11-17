@@ -1,22 +1,14 @@
-name : My first workflow
-
-on: push
-
+name: My first workflow
+'on': push
 jobs:
-    first_job:
-         runs-on: ubuntu-latest
-         steps:
-         - name: Checkout Repo
-           uses: actions/checkout@v4
-         
-         - name: Welcom message
-           run: echo 'My first github action'
-
-         - name: List files
-           run: ls
-         
-         - name: Read fike
-           run: cat Readme.md
-
-    
-		
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Welcom message
+        run: echo 'My first github action'
+      - name: List files
+        run: ls
+      - name: Read fike
+        run: cat Readme.md
