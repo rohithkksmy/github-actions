@@ -15,7 +15,7 @@ jobs:
          - name: List files
            run: ls
          
-         - name : Read fike
+         - name: Read fike
            run: cat Readme.md
 
     
